@@ -15,6 +15,10 @@ Install these python modules:
 
 `pip install RandomWords`
 
+Run the python script as per the following:
+
+`python PySteal.py`
+
 Make sure to have a project id from INFURA, it's used to check for ETH balances.
 
 Get the PROJECT ID from: [INFURA](https://infura.io/)
