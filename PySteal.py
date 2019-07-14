@@ -7,7 +7,7 @@ import time
 
 
 rw = RandomWords()
-w = web3.Web3(web3.HTTPProvider('https://mainnet.infura.io/v3/4b50e22d04d74caa860b06e68ec44937'))
+w = web3.Web3(web3.HTTPProvider('https://mainnet.infura.io/v3/PROJECT_ID'))
 def searchPrivKey(nothing):
    for i in range(10):
     try:
@@ -19,7 +19,7 @@ def searchPrivKey(nothing):
         if int(balance) == 0:
             pass
         else:
-            with open("test.txt", "a") as myfile:
+            with open("keys.txt", "a") as myfile:
                 myfile.write('\n ' + str(balance) + str(private_key) + acct.address)
     except Exception as e:
         print(e)
